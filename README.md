@@ -2,5 +2,4 @@
 Better responsible UI for Instagram Login page using HTML, jQuery, SASS.
 
 
-https://user-images.githubusercontent.com/53056041/173469206-8f779e42-5221-41d6-b27f-3d4f1dedcc67.mp4
-
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/53056041/173641156-0474526d-6ad0-4b42-b50e-b71afa725795.gif)
