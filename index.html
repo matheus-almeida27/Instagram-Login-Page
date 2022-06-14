@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram - Login</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="ig-wrapper">
+        <div class="phones">
+            <div>
+                <img class="phone1" src="/img/phone-case.png" alt="Phone Front">
+            </div>
+            <div class="slides" id="slides">
+                <div>
+                    <img class="phoneSc" src="/img/screen-1.png" alt="Phone Front">
+                </div>
+
+                <div>
+                    <img class="phoneSc" src="/img/screen-2.png" alt="Phone Front">
+                </div>
+
+                <div>
+                    <img class="phoneSc" src="/img/screen-3.png" alt="Phone Front">
+                </div>
+            </div>
+        </div>
+        
+        <div class="login-box">
+            
+            <div class="group">
+                <img class="logo-ig" src="/img/logo-ig.png">
+                <div class="profile-photo">
+                    <img id="prof" src="/img/profile-photo.jpg">
+                </div>
+                <a href="#" class="continue-login">Continue as dymonn_</a>
+                You're not dymonn_? <a href="#" class="switch_acc">Switch account</a>
+            </div>
+            <div class="group">
+                <p class="getApp">Get the app!</p>
+                <div class="download">
+                    <a href="#"><img class="download-btn" src="/img/playStore.png" alt="Download on Play Store"></a>
+                    <a href="#"><img class="download-btn" src="/img/appStore.png" alt="Download on Play Store"></a>
+                        
+                </div>
+            </div>    
+        </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- screen slides -->
+    <script>
+        $("#slides > div:gt(0)").hide();
+    
+        setInterval(function() {
+         $('#slides > div:first')
+        .fadeOut(1500)
+        .next()
+        .fadeIn(1500)
+        .end()
+        .appendTo('#slides');
+    }, 4000);
+    </script>
+</body>
+
+</html>
